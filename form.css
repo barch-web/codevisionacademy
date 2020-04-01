@@ -1,0 +1,152 @@
+
+body{
+    background-color: darkturquoise;
+}
+.contact-form{
+    height: 90vh;
+}
+.content{
+    width: 600px;
+    margin: 0 auto;
+    font-size: 32px;
+    color: #000000;
+    padding-top: 22px;
+    align-self: justify;
+    text-align: center;
+}
+span{
+    color: rgb(225, 0, 255);
+    font-style: italic;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.row{
+    width: 50%;
+    display: block;
+    float: left;
+
+}
+.col{
+  width: 100%;
+  margin-left: 18px;
+  
+}
+.form-element input{
+    border: 1px solid grey;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 5px 5px 10px 5px;
+    background-color: lightgrey;
+    color: #000000;
+}
+.form-element label{
+    /*position: relative;*/
+    float: left;
+    width: 250px;
+    font-size: 25px;
+    font-weight: bolder;
+    color: #000000;
+}
+.form-element select{
+    border: 1px solid grey;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 5px 5px 10px 5px;
+    color: #000000;
+    background-color: lightgray;
+}
+.form-element{
+    margin-top: 10px;
+}
+#wrapper{
+    width: 600px;
+    margin: 0 auto;
+}
+#submitButton{
+    width: 160px;
+    color: #fff;
+    background-color: rgb(118, 5, 146);
+    border: 1px solid rgb(118, 5, 146);
+    border-radius: 10px;
+    font-size: 30px;
+    font-family: fantasy, sans-serif;
+    margin-top: 130px;
+}
+#submitButton:hover{
+    text-transform: capitalize;
+    background-color: blue;
+    border: 1px solid blue;
+    color: floralwhite;
+}
+#errorMessage{
+    font-size: x-small;
+    color: red;
+    font-style: italic;
+}
+#successMessage{
+    font-size: x-small;
+    color: green;
+    font-style: oblique;
+    display: none;
+    margin-bottom: 8px;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    
+
+}
+.locateus{
+    font-size: 22px;
+    border-right: 1px solid #fff;
+    margin-top: 12px;
+    text-align: center;
+}
+.locateus span{
+    color: darkgreen;
+    font-size: 28px;
+
+}
+.social{
+    font-size: 22px;
+    border-right: 1px solid #fff;
+}
+.social h3{
+    color: darkgreen;
+    font-size: 28px;
+}
+.shortMessage label{
+    font-size: 26px;
+    color: #fff;
+    float: left;
+    padding-top: 25px;
+    padding-left: 80px;
+    width: 200px;
+}
+.shortMessage input{
+    font-size: 28px;
+    border: 1px solid gray;
+    border-radius: 6px;
+    float: left;
+    width: 230px;
+     
+}
+.shortMessage textarea{
+    float: left;
+    margin-top: 8px;
+    font-size: 16px;
+}
+
+.shortMessage button{
+    width: 130px;
+    padding: 5px 5px;
+    float: left;
+    margin-left: 280px;
+    margin-top: 8px;
+    color: #fff;
+    background-color: rgb(118, 5, 146);
+    border: 1px solid rgb(118, 5, 146);
+    border-radius: 10px;
+    font-family: fantasy, sans-serif;
+    font-size: 20px;
+}
