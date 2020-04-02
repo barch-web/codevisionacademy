@@ -3,7 +3,7 @@
 
 <head>
     <title>Code Vision Academy</title>
-    <link rel="stylesheet" type="text/css" href="./style.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="form.css">
     <!--------------------Font Awesome----------------------->
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
@@ -20,10 +20,7 @@
         </ul>
     </nav>
     <div class="contact-form">
-        <div class="content">
-            <p>Learn Wisth Us, <span>Enroll Now!</span></p>
-        </div>
-
+        <p class="content">Learn Wisth Us, <span>Enroll Today!</span></p>
         <div id="wrapper ">
             <div id="successMessage">
                 <p>Congratulation!</p>
@@ -33,19 +30,19 @@
             <div id="errorMessage"></div>
 
             <form action="post">
-                <div class="row">
-                    <div class="col">
+                <div class="col">
+                    <div class="row">
                         <div class="form-element">
                             <label for="firstName">First Name</label>
-                            <input type="text" name="firstName" id="firstName" placeholder="John">
+                            <input type="text" name="firstName" id="firstName" required>
                         </div>
                         <div class="form-element">
                             <label for="lastname">Last Name</label>
-                            <input type="text" name="lastName" id="lastName" placeholder="Doe">
+                            <input type="text" name="lastName" id="lastName" required>
                         </div>
                         <div class="form-element">
                             <label for="gender">Gender</label>
-                            <select name="gender" id="select">
+                            <select name="gender" id="select" required>
                                 <option value="Male">Male</option>
                                 <option value="Female">Female</option>
                                 <option value="Other">Other</option>
@@ -53,11 +50,11 @@
                         </div>
                         <div class="form-element">
                             <label for="dateOfBirth">Date of Birth</label>
-                            <input type="date" name="dateOfBirth" id="dateOfBirth">
+                            <input type="date" name="dateOfBirth" id="dateOfBirth" required>
                         </div>
                         <div class="form-element">
                             <label for="sponsor">Guardian's Name</label>
-                            <input type="text" name="sponsor" id="sponsor">
+                            <input type="text" name="sponsor" id="sponsor" required>
                         </div>
                         <div class="form-element">
                             <label for="phone">Telephone</label>
@@ -65,15 +62,15 @@
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col">
+                <div class="col">
+                    <div class="row">
                         <div class="form-element">
-                            <label for="email">Email</label>
+                            <label for="email">Email Address</label>
                             <input type="email" name="email" id="email" placeholder="example@gmail.com" required>
                         </div>
                         <div class="form-element">
                             <label for="programme">Programme</label>
-                            <select name="programme" id="select">
+                            <select name="programme" id="select" required>
                                 <option value="">Web Development</option>
                                 <option value="">Mobile App Development</option>
                                 <option value="">Computer Hardware</option>
@@ -83,22 +80,22 @@
                         </div>
                         <div class="form-element">
                             <label for="userName">User Name</label>
-                            <input type="text" name="userName" id="userName">
+                            <input type="text" name="userName" id="userName" required>
                         </div>
                         <div class="form-element">
                             <label for="password">Password</label>
-                            <input type="password" name="password" id="password">
+                            <input type="password" name="password" id="password" required>
                         </div>
                         <div class="form-element">
                             <label for="passwordConfirm">Confirm Password</label>
-                            <input type="password" name="passwordConfirm" id="passwordConfirm">
+                            <input type="password" name="passwordConfirm" id="passwordConfirm" required>
                         </div>
                     </div>
                 </div>
+                <div class="form-element signup">
+                    <input type="submit" id="submit" value="Enroll">
+                </div>
             </form>
-            <div class="form-element signup">
-                <input type="submit" id="submit" value="Enroll">
-            </div>
         </div>
     </div>
     <div class="zone grid">

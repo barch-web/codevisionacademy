@@ -1,9 +1,10 @@
 
 body{
-    background-color: hsl(240, 80%, 90%);
+   
 }
 .contact-form{
     height: 90vh;
+    background-color: hsl(240, 80%, 90%);
 }
 .content{
     width: 600px;
@@ -15,7 +16,7 @@ body{
     text-align: center;
 }
 span{
-    color: rgb(225, 0, 255);
+    color: rgb(86, 4, 97);;
     font-style: italic;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -89,4 +90,114 @@ span{
     display: none;
     margin-bottom: 8px;
 }
+
+/*.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1.5fr;
+    grid-template-rows: auto;
+    background-color: #000000;
+}
+.box1{
+    background-color: #000000;
+    margin: 5px;
+    border-radius: 4px;
+    text-align: center;
+    border: 1px solid white;
+    position: absolute;
+}
+.locateus{
+    font-size: 22px;
+    border-right: 1px solid #fff;
+    text-align: justify;
+    padding:12px 12px;
+    color: white;
+}
+.locateus span{
+    color: #f5f5f6;
+    font-size: 28px;
+    position: relative;
+    left: 20%;
+}
+.locateus p{
+    line-height: 1.5;
+    margin-left: 30px;
+}
+.social{
+    font-size: 22px;
+    border-right: 1px solid #fff;
+    padding: 12px 12px;
+}
+.social span{
+    color: #f5f5f6;
+    font-size: 28px;
+    position: relative;
+    left: 20%;
+}
+.social a{
+    line-height: 1.5;
+    margin-left: 30px;
+}
+.shortMessage span{
+    color: #f5f5f6;
+    font-size: 28px;
+    position: relative;
+    left: 20%;
+    
+}
+.shortMessage label{
+    display: block;
+    font-size: 30px;
+    color: #fff;
+    float: left;
+    padding-left: 12px;
+    padding-top: 20px;
+    width: 120px;
+}
+.shortMessage form{
+    margin-left: 55px;
+}
+.shortMessage input{
+    display: block;
+    font-size: 20px;
+    border: 1px solid gray;
+    border-radius: 6px;
+    width: 230px;
+    padding: 8px 10px;
+    background-color: hsl(240, 80%, 90%);;
+}
+.shortMessage textarea{
+    margin-top: 5px;
+    font-size: 16px;
+    border: 1px solid grey;
+    border-radius: 6px;
+    background-color: hsl(240, 80%, 90%);;
+}
+.shortMessage .info{
+    width: 90px;
+    padding: 8px 10px;
+    margin: 8px 0 10px 130px;
+    color: #fff;
+    background-color: rgb(86, 4, 97);
+    border-radius: 10px;
+    font-family: Helvetica, sans-serif;
+    font-size: 18px;
+}
+.more-info{
+    color: #f5f5f6;
+    background-color: rgb(86, 4, 97);
+    border: 1px solid #f5f5f6;
+    font-size: 18px;
+    margin:0 0 20px 70px;
+    border-radius: 8px;
+    width: 90px;
+    padding: 6px 6px;
+}
+footer{
+    text-align: center;
+    font-weight: bolder;
+    background-color: #000000;
+    color: #f5f5f6;
+    padding: 25px 25px;
+    font-size: 24px;
+}*/
 
