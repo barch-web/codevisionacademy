@@ -2,23 +2,6 @@ body {
     margin: 0 auto;
 }
 
-.zone {
-    /*padding:30px 50px;*/
-    /*cursor:pointer;*/
-    color:#FFF;
-    font-size:2em;
-    border-radius:4px;
-    border:1px solid #bbb;
-    transition: all 0.3s linear;
-}
-
-.zone:hover {
-    -webkit-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
-    -moz-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
-    -o-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0, 0, 0, 0.15) 0px -10px 20px;
-    box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
-}
-
 /***********************************************************************
  *  Nav Bar
  **********************************************************************/
@@ -26,61 +9,10 @@ body {
     display: flex;
     list-style: none;
     margin: 0;
-    font-size: 0.4em;
+    font-size: 1.7em;
     background-color: #000000;
+    border-radius: 4px;
 }
-.logo{
-    height: 45vh;
-    float: left;
-    position: absolute;
-}
-.slogan{
-    position: relative;
-    top: 93%;
-    margin-left: 0px;
-    color: rgb(118, 5, 146);
-    font-size: 18px;
-    word-spacing: 1.5;
-}
-
-.heading{
-    position: relative;
-    top: 90px;
-    left: 75%;
-    text-align: center;
-    justify-self: center;
-}
-.heading input{
-    background-color: rgb(118, 5, 146);
-    border-radius: 10px;
-    border: 1px solid rgb(118, 5, 146);
-    padding: 12px 12px;
-    color: #fff;
-    font-size: 22px;
-    font-family: fantasy, sans-serif;
-    
-}
-.heading input:hover{
-    text-transform: capitalize;
-    background-color: darkturquoise;
-    border: 1px solid darkturquoise;
-    color: floralwhite;
-}
-.heading label{
-    font-size: 34px;
-    font-family: fantasy, sans-serif;
-    color: darkturquoise;
-
-   
-}
-
-@media only screen and (max-width: 600px) {
-    .main-nav {
-        font-size: 0.5em;
-        padding: 0;
-    }
-}
-
 .push {
     margin-left: auto;
 }
@@ -93,102 +25,194 @@ a {
     color: #f5f5f6;
     text-decoration: none;
 }
-
-footer{
-    background-color: #000000;
-    color: #ffff;
-    font-size: 18px;
-}
-
-/***********************************************************************
- *  Cover
- **********************************************************************/
+/**************************************************************************
+    * Cover Page
+****************************************************************************/
 .container {
-    /*show heigh: auto*/
-    background-image: url('./images/monitor_coding_2.png');
+    background-color: #fff;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 70vh; 
+    height: 50vh; 
     display: flex;
-    /*align-items: center;
-    justify-content: center;*/
+    border: 1px solid grey;
+    border-radius: 4px;
+}
+.logo{
+    height: 45vh;
+    float: left;
+    position: absolute;
+}
+.slogan{
+    position: relative;
+    top: 93%;
+    margin-left: 0px;
+    color: rgb(118, 5, 146);
+    font-size: 18px;
+}
+.heading{
+    position: relative;
+    top: 90px;
+    left: 65%;
+    text-align: center;
+    justify-self: center;
+}
+.heading a{
+    background-color: rgb(118, 5, 146);
+    border-radius: 10px;
+    border: 1px solid #fff;
+    padding: 12px 12px;
+    color: #fff;
+    font-size: 22px;
+    font-family: fantasy, sans-serif;
+}
+.heading a:hover{
+    text-transform: capitalize;
+    background-color: darkturquoise;
+    border: 1px solid darkturquoise;
+    color: floralwhite;
 }
 
 /***********************************************************************
- *  Grid Panel
+ *  Grid Panel, Main Content
  **********************************************************************/
 .grid-wrapper {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 3px;
 }
 
 .box {
-    background-color: #444;
+    background-color: rgb(118, 5, 146);
     /*padding: 130px;*/
-    margin: 20px;
+    margin: 5px;
+    border-radius: 4px;
+    text-align: center;
+    border: 1px solid white;
 }
-
 .box > img {
     width: 100%;
+    height: 40vh;
 }
-
-/***********************************************************************
- *  Footer
- **********************************************************************/
-footer {
+div .content{
+    width: fit-content;
+    font-size: 25px;
     text-align: center;
+    margin: 8px 8px;
+    padding-bottom: 12px;
 }
 
-/*https://paulund.co.uk/how-to-create-shiny-css-buttons*/
-/***********************************************************************
- *  Green Background
- **********************************************************************/
-.green {
-    background: #56B870; /* Old browsers */
-    background: -moz-linear-gradient(top, #56B870 0%, #a5c956 100%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#56B870), color-stop(100%,#a5c956)); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top, #56B870 0%,#a5c956 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top, #56B870 0%,#a5c956 100%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(top, #56B870 0%,#a5c956 100%); /* IE10+ */
-    background: linear-gradient(top, #56B870 0%,#a5c956 100%); /* W3C */
+/***********************************************************************************
+    Footer Grid
+*************************************************************************************/
+
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    background-color: #000000;
+}
+.box1{
+    background-color: #000000;
+    /*padding: 130px;*/
+    margin: 5px;
+    border-radius: 4px;
+    text-align: center;
+    border: 1px solid white;
+    position: absolute;
+}
+.locateus{
+    font-size: 22px;
+    border-right: 1px solid #fff;
+    text-align: justify;
+    padding:12px 12px;
+    color: white;
+}
+.locateus span{
+    color: darkgreen;
+    font-size: 28px;
+    position: relative;
+    left: 20%;
+}
+.social{
+    font-size: 22px;
+    border-right: 1px solid #fff;
+    padding: 12px 12px;
+}
+.social span{
+    color: darkgreen;
+    font-size: 28px;
+    position: relative;
+    left: 20%;
+}
+.shortMessage span{
+    color: darkgreen;
+    font-size: 28px;
+    padding: 12px 12px;
+    position: relative;
+    left: 20%;
+}
+.shortMessage label{
+    font-size: 20px;
+    color: #fff;
+    float: left;
+    padding-left: 12px;
+    width: 200px;
+    margin-right: 25px;
+}
+.shortMessage form{
+    margin-left: 55px;
+}
+.shortMessage input{
+    font-size: 20px;
+    border: 1px solid gray;
+    border-radius: 6px;
+    /*float: left;*/
+    width: 230px;
+    padding: 8px 10px;
+     
+}
+.shortMessage textarea{
+    /*float: left;*/
+    margin-top: 5px;
+    font-size: 16px;
+    border: 1px solid grey;
+    border-radius: 6px;
 }
 
-/***********************************************************************
- *  Red Background
- **********************************************************************/
-.red {
-    background: #C655BE; /* Old browsers */
-    background: -moz-linear-gradient(top, #C655BE 0%, #cf0404 100%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#C655BE), color-stop(100%,#cf0404)); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top, #C655BE 0%,#cf0404 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top, #C655BE 0%,#cf0404 100%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(top, #C655BE 0%,#cf0404 100%); /* IE10+ */
-    background: linear-gradient(top, #C655BE 0%,#cf0404 100%); /* W3C */
+.shortMessage button{
+    width: 100px;
+    padding: 5px 5px;
+    /*float: left;*/
+    margin: 8px 30px 10px 0;
+    color: #fff;
+    background-color: blue;
+    border-radius: 10px;
+    font-family: fantasy, sans-serif;
+    font-size: 18px;
+
+}
+.more-info{
+    color: #f5f5f6;
+    border: 1px solid grey;
+    font-size: 18px;
+    margin:0 0 20px 70px;
+    border-radius: 6px;
+    width: 90px;
+}
+footer{
+    text-align: center;
+    font-weight: bolder;
+    background-color: #000000;
+    color: #f5f5f6;
 }
 
-/***********************************************************************
- *  Yellow Background
- **********************************************************************/
-.yellow {
-    background: #F3AAAA; /* Old browsers */
-    background: -moz-linear-gradient(top, #F3AAAA 0%, #febf04 100%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#F3AAAA), color-stop(100%,#febf04)); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top, #F3AAAA 0%,#febf04 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top, #F3AAAA 0%,#febf04 100%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(top, #F3AAAA 0%,#febf04 100%); /* IE10+ */
-    background: linear-gradient(top, #F3AAAA 0%,#febf04 100%); /* W3C */
-}
+/**********************************************************************************************************
+        Media Query Responsive Panel
+************************************************************************************************************/
 
-/***********************************************************************
- *  Blue Background
- **********************************************************************/
-.blue {
-    background: #7abcff; /* Old browsers */
-    background: -moz-linear-gradient(top, #7abcff 0%, #60abf8 44%, #4096ee 100%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#7abcff), color-stop(44%,#60abf8), color-stop(100%,#4096ee)); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%); /* IE10+ */
-    background: linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%); /* W3C */
+@media only screen and (max-width: 600px) {
+    .main-nav {
+        font-size: 0.5em;
+        padding: 0;
+    }
 }
